@@ -10,7 +10,7 @@ public class Main {
         Configuration config = EnvironmentConfigurationProvider.getConfig();
         config.setLogGroupName("SethLogGroup");
         config.setEnvironmentOverride(EC2);
-        config.setAgentEndpoint("udp://127.0.0.1:25888");
+        config.setAgentEndpoint("tcp://127.0.0.1:25888");
         for (int i = 0; i < 25; i++) {
             MetricThread metricThread = new MetricThread();
             metricThread.run();
