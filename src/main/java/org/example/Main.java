@@ -11,7 +11,7 @@ public class Main {
         config.setLogGroupName("SethLogGroup");
         config.setEnvironmentOverride(EC2);
         config.setAgentEndpoint("tcp://127.0.0.1:25888");
-        for (int i = 0; i < 25; i++) {
+        for (int i = 0; i < 100; i++) {
             MetricThread metricThread = new MetricThread();
             metricThread.run();
         }
