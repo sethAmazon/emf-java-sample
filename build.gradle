@@ -28,3 +28,5 @@ ext {
 application {
     mainClassName = javaMainClass
 }
+
+jib.container.creationTime = 'USE_CURRENT_TIMESTAMP'
